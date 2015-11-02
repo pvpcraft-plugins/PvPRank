@@ -64,16 +64,17 @@ public class Ranking {
 						
 						if(b != newRank){
 							
-							Rankup.perms.playerRemoveGroup(player, b);
+							Rankup.perms.playerRemoveGroup(null, player, b);
 							
 						}
 					}
 						
 				} else {
-					Rankup.perms.playerRemoveGroup(player, Config.getCurrentRankableGroup( player ));
+					//Rankup.perms.playerRemoveGroup(null, player, Config.getCurrentRankableGroup( player ));
+					Rankup.perms.playerRemoveGroup(null, player, Config.getCurrentGroups( player ).get(Config.getCurrentGroups( player ).size()-1));
 				}
 			
-				Rankup.perms.playerAddGroup(player, newRank);
+				Rankup.perms.playerAddGroup(null, player, newRank);
 				Language.broadcast( "&b" + player.getDisplayName() + "&3 has ranked up to &b" + newRank + "." );
 				
 				return true;

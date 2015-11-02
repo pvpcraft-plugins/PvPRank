@@ -29,7 +29,7 @@ public class Commands implements CommandExecutor {
 			if(args.length == 0){
 				
 				if( sender.hasPermission("rankup.rankup") ){
-					Ranking.rankup( player );
+					com.fvza.rankup.Ranking.rankup( player );
 					return true; 
 				} else {
 					Language.send( player, "&cYou do not have permission to rankup.");

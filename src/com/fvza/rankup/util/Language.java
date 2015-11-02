@@ -35,7 +35,9 @@ public class Language {
 			if( msg.contains("rankupSuccess")){
 				//player.sendMessage( ChatColor.translateAlternateColorCodes("&", msg.replace("%RANK%", msg.concat(",")[1].toString() ) ) ); 
 			} else if ( msg.contains("notRankable")){
-				player.sendMessage( ChatColor.translateAlternateColorCodes('&', notRankable) );
+				player.sendMessage( msg /*ChatColor.translateAlternateColorCodes('&', notRankable)*/ );
+			} else {
+				player.sendMessage( msg );
 			}
 			return;
 		}

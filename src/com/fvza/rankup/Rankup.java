@@ -23,11 +23,13 @@ public class Rankup extends JavaPlugin{
 	public static Plugin plugin;
 	
 	private boolean setupPermissions() {
-        RegisteredServiceProvider<Permission> rsp = getServer().getServicesManager().getRegistration(Permission.class);
-        perms = rsp.getProvider();
-        return perms != null;
-    }
-	
+		RegisteredServiceProvider<Permission> rsp = getServer().getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
+		if (rsp != null) {
+			perms = rsp.getProvider();
+		}
+		return (perms != null);
+	}
+    
 	private boolean setupEconomy() {
         if (getServer().getPluginManager().getPlugin("Vault") == null) {
             return false;
