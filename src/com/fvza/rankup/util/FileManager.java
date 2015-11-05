@@ -17,7 +17,7 @@ public class FileManager {
 	private YamlConfiguration lang; 
     
 	public void loadFiles(){
-		Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("Rankup");
+		Plugin plugin = Bukkit.getServer().getPluginManager().getPlugin("PvPRank");
 				
 		configFile = new File( plugin.getDataFolder(), "config.yml" );
 		langFile = new File( plugin.getDataFolder(), "language.yml" );
