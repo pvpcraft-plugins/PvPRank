@@ -25,15 +25,14 @@ public class Commands implements CommandExecutor {
 		
 		Player player = (Player) sender; 
 		
-		if( command.getName().equalsIgnoreCase("rankup") ){
+		if( command.getName().equalsIgnoreCase("rankup") || command.getName().equalsIgnoreCase("acceptrules") ){
 			if(args.length == 0){
-				
 				if( sender.hasPermission("rankup.rankup") ){
 					com.fvza.rankup.Ranking.rankup( player );
 					return true; 
 				} else {
 					Language.send( player, "&cYou do not have permission to rankup.");
-				}
+			}
 				
 			} else if ( args.length == 1 ){
 				
