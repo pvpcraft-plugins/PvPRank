@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>ca.pvpcraft</groupId>
-  <artifactId>PvP</artifactId>
-  <version>Rank</version>
+  <artifactId>PvPRank</artifactId>
+  <version>v1</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <resources>
@@ -25,7 +25,7 @@
     </plugins>
   </build>
   
-  <name>PvPAPI</name>
+  <name>PvPRANK</name>
   <url>http://pvpcraft.ca</url>
 
   <properties>
