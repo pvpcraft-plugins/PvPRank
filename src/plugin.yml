@@ -12,7 +12,7 @@ commands:
     rankup:
         description: Pay to rank up to the next rank.
     acceptrules:
-    	description: same thing as rankup, but used to accept the rules.
+        description: same thing as rankup, but used to accept the rules.
 permissions:
     rankup.*: 
         description: Give access to all rank up commands. 
