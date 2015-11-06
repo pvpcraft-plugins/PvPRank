@@ -14,6 +14,7 @@ import com.fvza.rankup.Rankup;
 public class Config {
 	
 	public static boolean override;
+	public static boolean debug;
 	public static String[] groupNames; 
 	public static Double[] groupPrices; 
 	public static int[] groupTimes;
@@ -164,6 +165,7 @@ public class Config {
 		}
 		
 		override = config.getBoolean("settings.override-groups");
+		debug = config.getBoolean("settings.debug");
 
     }
 	

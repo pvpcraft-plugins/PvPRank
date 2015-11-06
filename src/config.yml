@@ -4,6 +4,7 @@
 # If this is true, it will override any groups when someone ranks up. Only worry about this if a given person may have multiple ranks. 
 settings:
     override-groups: false
+    debug: false
     do-not-edit-this: 1
 # Groups are ordered in the succession you want them to be. Format as follows: rankname: price ( Price can have a decimal place ) 
 ranks:
