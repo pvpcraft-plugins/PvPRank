@@ -28,7 +28,7 @@ public class ListenerSign implements Listener {
 		if( block.getType() == Material.SIGN_POST || block.getType() == Material.WALL_SIGN ){
 			Sign s = (Sign)block.getState();
 			
-			if(s.getLine(0).equalsIgnoreCase("§1[Rankup]")){
+			if(s.getLine(0).equalsIgnoreCase("ï¿½1[PvPRank]")){
 				if( !player.hasPermission( "rankup.sign" ) ){
 					Language.send( player, "&cYou do not have permission to break this sign." );
 					event.setCancelled( true );
@@ -46,12 +46,12 @@ public class ListenerSign implements Listener {
 public void onSignChange(SignChangeEvent e) {
   Player p = e.getPlayer();
  
-  if (e.getLine(0).equalsIgnoreCase("[Rankup]"))
+  if (e.getLine(0).equalsIgnoreCase("[PvPRank]"))
     
 	  if (p.hasPermission("rankup.sign")) {
      
     	if (e.getLine(1).isEmpty() && e.getLine(2).isEmpty() && e.getLine(3).isEmpty() ) {
-    		e.setLine(0, ChatColor.DARK_BLUE + "[Rankup]");
+    		e.setLine(0, ChatColor.DARK_BLUE + "[PvPRank]");
     		e.setLine(1, "Right click me");
     		e.setLine(2, "to rank up!");
   		
@@ -77,7 +77,7 @@ public void onSignChange(SignChangeEvent e) {
 				Sign s = (Sign)b.getState();
 				Player p = event.getPlayer();
 					
-				if (s.getLine(0).equalsIgnoreCase("§1[Rankup]"))
+				if (s.getLine(0).equalsIgnoreCase("ï¿½1[PvPRank]"))
 						Ranking.rankup( p );
 				}
 		}

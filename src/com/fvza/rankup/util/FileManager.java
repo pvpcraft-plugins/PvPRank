@@ -10,7 +10,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.Plugin;
 
 public class FileManager {
-	private File configFile; 
+	private File configFile;
 	private File langFile; 
 	
 	private YamlConfiguration config;

@@ -7,6 +7,11 @@ import org.bukkit.entity.Player;
 import com.fvza.rankup.util.Config;
 import com.fvza.rankup.util.Language;
 
+/**
+ * handles ranking up players
+ * @author macdja38
+ *
+ */
 public class Ranking {
 	
 	public static boolean pay(Player player, Double amount){
@@ -62,7 +67,7 @@ public class Ranking {
 
 					for(String b : Rankup.perms.getPlayerGroups( player )){
 						
-						if(b != newRank){
+						if(b != newRank && Config.getAvailableGroups().contains(newRank)){
 							
 							Rankup.perms.playerRemoveGroup(null, player, b);
 							

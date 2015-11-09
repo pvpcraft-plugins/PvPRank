@@ -39,7 +39,7 @@ public class Commands implements CommandExecutor {
 				if( args[0].equalsIgnoreCase("v") || args[0].equalsIgnoreCase("version") ){
 					
 					if( player.hasPermission("rankup.reload" )){
-						Language.send( player , " &3&oRankup (" + Bukkit.getServer().getPluginManager().getPlugin("Rankup").getDescription().getVersion() + ")&7&o by FVZA is running.");
+						Language.send( player , " &3&oPvPRank (" + Bukkit.getServer().getPluginManager().getPlugin("PvPRank").getDescription().getVersion() + ")&7&o by Macdja38 and FVZA is running.");
 					} else {
 						Language.send( player ,"&cYou do not have permission for this command.");
 					}
